@@ -8,5 +8,6 @@ namespace BlazorHRM.Server.Pages
 {
     public class EmployeeOverviewBase : ComponentBase
     {
+
     }
 }
