@@ -19,14 +19,14 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach(var employees in Employees)
+            @foreach(var employee in Employees)
             {
             <tr>
-                <td><img src="@($"https://i.imgur.com/" + employees.EmployeeId + ".jpg")" class="rounded-circle employeePicture"/></td>
-                <td>@employees.EmployeeId</td>
-                <td>@employees.FirstName</td>
-                <td>@employees.LastName</td>
-                <td></td>
+                <td><img src="@($"https://i.imgur.com/" + employee.EmployeeId + ".jpg")" class="rounded-circle employeePicture"/></td>
+                <td>@employee.EmployeeId</td>
+                <td>@employee.FirstName</td>
+                <td>@employee.LastName</td>
+                <td><a class="btn btn-primary" href="@($"employeedetail/{employee.EmployeeId}")">Details</a></td>
             </tr>
             }
         </tbody>

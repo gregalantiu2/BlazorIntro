@@ -1,5 +1,16 @@
-﻿<h3>EmployeeDetail</h3>
+﻿@page "/EmployeeDetail/{EmployeeID}"
+@inherits EmployeeDetailBase
 
-@code {
+<h1 class="page-title">Details for @Employee.FirstName @Employee.LastName</h1> 
 
-}
+<div class="cssgrid">
+    <div class="box">
+        <img src="@($"https://i.imgur.com/" + Employee.EmployeeId + ".jpg")" class="rounded-circle employeeDetailPicture" />
+    </div>
+    <div class="box">
+        test
+    </div>
+    <div class="box">
+        test
+    </div>
+</div>
