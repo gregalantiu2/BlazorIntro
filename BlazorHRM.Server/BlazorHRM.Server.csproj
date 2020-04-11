@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BlazorHRM.Api\BethanysPieShopHRM.Api.csproj" />
     <ProjectReference Include="..\BlazorHRM.Shared\BethanysPieShopHRM.Shared.csproj" />
   </ItemGroup>
 
