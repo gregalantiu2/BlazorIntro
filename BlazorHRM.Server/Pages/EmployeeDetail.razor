@@ -1,16 +1,44 @@
 ﻿@page "/EmployeeDetail/{EmployeeID}"
 @inherits EmployeeDetailBase
 
-<h1 class="page-title">Details for @Employee.FirstName @Employee.LastName</h1> 
+<h1 class="page-title">@Employee.FirstName @Employee.LastName</h1> 
 
 <div class="cssgrid">
     <div class="box">
         <img src="@($"https://i.imgur.com/" + Employee.EmployeeId + ".jpg")" class="rounded-circle employeeDetailPicture" />
     </div>
     <div class="box">
-        test
+        <table>
+            <tbody>
+                <tr>
+                    <td class="details" style="position:relative;right:90px;">
+                        <b>Job Category:</b> @Employee.JobCategory
+                    </td>
+                </tr>
+                <tr>
+                    <td class="details" style="position:relative;right:66px;">
+                        <b>Birth Date:</b> @Employee.BirthDate.ToShortDateString()
+                    </td>
+                </tr>
+                <tr>
+                    <td class="details" style="position:relative;right:46px;">
+                        <b>Email:</b> @Employee.Email
+                    </td>
+                </tr>
+                <tr>
+                    <td class="details" style="position:relative;right:29px;"> 
+                        <b>Phone:</b> @Employee.PhoneNumber
+                    </td>
+                </tr>
+                <tr>
+                    <td class="details" style="position:relative;right:17px;">
+                        <b>Address:</b> @Employee.Street @Employee.City, @Employee.Zip @Employee.Country
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <div class="box">
-        test
+        
     </div>
 </div>

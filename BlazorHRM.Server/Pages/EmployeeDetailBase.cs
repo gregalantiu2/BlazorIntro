@@ -64,10 +64,10 @@ namespace BlazorHRM.Server.Pages
         {
             var e1 = new Employee
             {
-                CountryId = 1,
+                CountryId = 3,
                 MaritalStatus = MaritalStatus.Single,
                 BirthDate = new DateTime(1989, 3, 11),
-                City = "Brussels",
+                City = "Louisville",
                 Email = "bethany@bethanyspieshop.com",
                 EmployeeId = "1q6wD1H",
                 FirstName = "Libby",
@@ -75,8 +75,8 @@ namespace BlazorHRM.Server.Pages
                 Gender = Gender.Female,
                 PhoneNumber = "324777888773",
                 Smoker = false,
-                Street = "Grote Markt 1",
-                Zip = "1000",
+                Street = "946 Goss Ave. #4105",
+                Zip = "40217",
                 JobCategoryId = 1,
                 Comment = "Lorem Ipsum",
                 ExitDate = null,
@@ -85,7 +85,7 @@ namespace BlazorHRM.Server.Pages
 
             var e2 = new Employee
             {
-                CountryId = 2,
+                CountryId = 3,
                 MaritalStatus = MaritalStatus.Single,
                 BirthDate = new DateTime(1979, 1, 16),
                 City = "Antwerp",
@@ -96,8 +96,8 @@ namespace BlazorHRM.Server.Pages
                 Gender = Gender.Male,
                 PhoneNumber = "33999909923",
                 Smoker = false,
-                Street = "New Street",
-                Zip = "2000",
+                Street = "946 Goss Ave. #4105",
+                Zip = "40217",
                 JobCategoryId = 1,
                 Comment = "Lorem Ipsum",
                 ExitDate = null,

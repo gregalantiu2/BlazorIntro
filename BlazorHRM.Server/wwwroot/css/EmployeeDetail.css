@@ -4,10 +4,17 @@
     grid-gap:10px;
 }
 
-.box {
-    
+.details {
+    border-bottom: solid darkmagenta;
+    border-width: 1px;
 }
 
 .employeeDetailPicture {
     width: 388px;
+}
+
+
+.page-title {
+    position: relative;
+    left: 85px;
 }
